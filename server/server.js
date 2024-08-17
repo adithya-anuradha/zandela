@@ -38,10 +38,11 @@ app.use(express.static('public'))
 
 // Set up connections to the databases
 const db = mysql.createConnection({
-  host: "127.0.0.1",
-  user: "root",  
-  password: "",
-  database: "zandela travels",
+  port: PORT,
+  host: host,
+  user: user,  
+  password: password,
+  database: database,
 });
 
 
