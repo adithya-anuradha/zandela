@@ -21,6 +21,7 @@ const user = process.env.REACT_APP_USER;
 const database = process.env.REACT_APP_DATABASE;
 const key = process.env.REACT_APP_JSON_KEY;
 const password = process.env.REACT_APP_PASSWORD;
+const PORT = process.env.REACT_APP_PORT;
 
 
 const app = express();
@@ -1428,5 +1429,5 @@ app.post('/admin_sales_comp', async (req, res) => {
 
 
 // Start the servers on different ports
-const PORT = process.env.REACT_APP_PORT;
+
 app.listen(8081, () => console.log(`Server for zandela travels started on port 8081`));
