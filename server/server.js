@@ -1428,4 +1428,4 @@ app.post('/admin_sales_comp', async (req, res) => {
 
 // Start the servers on different ports
 const PORT = process.env.REACT_APP_PORT;
-app.listen(PORT, () => console.log(`Server for zandela travels started on port ${PORT}`));
+app.listen(8081, () => console.log(`Server for zandela travels started on port 8081`));
